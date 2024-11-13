@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Interactive 3D Hero</title>
+        <link rel="stylesheet" href="/src/styles/main.css">
+      </head>
+      <body>
+        <div class="hero-container">
+          <canvas id="hero-canvas"></canvas>
+          <div class="controls-overlay">
+            <div class="model-selector">
+              <button data-model="robot">Robot</button>
+              <button data-model="car">Car</button>
+              <button data-model="spaceship">Spaceship</button>
+            </div>
+            <div class="color-picker">
+              <input type="color" id="background-color" value="#ffffff">
+              <label for="background-color">Background Color</label>
+            </div>
+          </div>
+          <div class="hero-text">
+            <h1>Explore Interactive 3D Worlds</h1>
+            <p>Interact with models, change backgrounds, and discover immersive experiences</p>
+          </div>
+        </div>
+        <script type="module" src="/src/main.js"></script>
+      </body>
+    </html>
